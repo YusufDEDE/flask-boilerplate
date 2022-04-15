@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  flask_boilerplate:
+    build: .
+    image: flask_boilerplate_v0.0.1
+    ports:
+      - 5050:5000
+    env_file:
+      - .env
